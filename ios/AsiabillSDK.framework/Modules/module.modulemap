@@ -1,0 +1,6 @@
+framework module AsiabillSDK {
+  umbrella header "AsiabillSDK.h"
+
+  export *
+  module * { export * }
+}

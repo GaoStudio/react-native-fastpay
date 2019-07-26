@@ -1,13 +1,14 @@
-
 #import "RNFastpay.h"
 #import <AlipaySDK/AlipaySDK.h>
-
+#import <AsiabillSDK/AsiabillSDK.h>
 @implementation RNFastpay
 {
     NSString *wxOpenId;
     NSString *alipayScheme;
+    NSString *asiabillpayScheme;
     RCTResponseSenderBlock wxCallBack;
     RCTResponseSenderBlock alipayCallBack;
+    RCTResponseSenderBlock asiabillpayCallBack;
 }
 
 RCT_EXPORT_MODULE(FastPay)
@@ -55,6 +56,9 @@ RCT_EXPORT_METHOD(setWxId:(NSString *)wxid){
 RCT_EXPORT_METHOD(setAlipayScheme:(NSString *)scheme){
     alipayScheme = scheme;
 }
+RCT_EXPORT_METHOD(setAsiabillPayScheme:(NSString *)scheme){
+    asiabillpayScheme = scheme;
+}
 RCT_EXPORT_METHOD(alipay:(NSString *)info callback:(RCTResponseSenderBlock)callback)
 {
     alipayCallBack = callback;
@@ -64,6 +68,17 @@ RCT_EXPORT_METHOD(alipay:(NSString *)info callback:(RCTResponseSenderBlock)callb
             NSLog(@"alipay:callback");
 
             callback([[NSArray alloc] initWithObjects:resultDic, nil]);
+        }];
+    });
+}
+RCT_EXPORT_METHOD(asiabillpay:(NSString *)info callback:(RCTResponseSenderBlock)callback)
+{
+    asiabillpayCallBack = callback;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [[AsiabillSDK defaultService] payOrder:info fromScheme:asiabillpayScheme callback:^(NSString *resData) {
+            NSLog(@"asiabillpay:callback");
+            callback([[NSArray alloc] initWithObjects:resData, nil]);
         }];
     });
 }

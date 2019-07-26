@@ -1,4 +1,4 @@
-package com.puti.paylib;
+package com.reactlibrary;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,7 +28,7 @@ public abstract class XWXPayEntryActivity extends Activity implements IWXAPIEven
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate: ");
-        api = WXAPIFactory.createWXAPI(this, PayModule.WX_APPID);
+        api = WXAPIFactory.createWXAPI(this, RNFastpayModule.WX_APPID);
         api.handleIntent(getIntent(), this);
     }
 

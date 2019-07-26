@@ -2,19 +2,23 @@
 {
   "name": "react-native-fastpay",
   "version": "1.0.0",
-  "description": "",
+  "description": "react-native支付",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "pay"
   ],
-  "author": "",
-  "license": "",
-  "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
-
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaoStudio/react-native-fastpay.git"
+  },
+  "author": "gaoweivf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaoStudio/react-native-fastpay/issues"
+  },
+  "homepage": "https://github.com/GaoStudio/react-native-fastpay"
 }

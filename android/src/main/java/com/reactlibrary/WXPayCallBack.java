@@ -1,4 +1,4 @@
-package com.puti.paylib;
+package com.reactlibrary;
 
 import com.facebook.react.bridge.WritableMap;
 
