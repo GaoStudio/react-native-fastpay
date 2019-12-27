@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22DE6FC422E98D44004B653C /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE6FC322E98D44004B653C /* libWeChatSDK.a */; };
 		B3E7B58A1CC2AC0600A0062D /* RNFastpay.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNFastpay.m */; };
 /* End PBXBuildFile section */
 
@@ -25,10 +24,6 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNFastpay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNFastpay.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		22DE6FC022E98D39004B653C /* WXApiObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		22DE6FC122E98D39004B653C /* WechatAuthSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		22DE6FC222E98D39004B653C /* WXApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		22DE6FC322E98D44004B653C /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNFastpay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNFastpay.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNFastpay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFastpay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22DE6FC422E98D44004B653C /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,10 +50,6 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				22DE6FC322E98D44004B653C /* libWeChatSDK.a */,
-				22DE6FC122E98D39004B653C /* WechatAuthSDK.h */,
-				22DE6FC222E98D39004B653C /* WXApi.h */,
-				22DE6FC022E98D39004B653C /* WXApiObject.h */,
 				B3E7B5881CC2AC0600A0062D /* RNFastpay.h */,
 				B3E7B5891CC2AC0600A0062D /* RNFastpay.m */,
 				134814211AA4EA7D00B7C361 /* Products */,

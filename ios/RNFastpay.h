@@ -4,8 +4,8 @@
 #else
 #import <React/RCTBridgeModule.h>
 #endif
-#import "WXApi.h"
-@interface RNFastpay : NSObject <RCTBridgeModule,WXApiDelegate>
+
+@interface RNFastpay : NSObject <RCTBridgeModule>
 
 @end
 

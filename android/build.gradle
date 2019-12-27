@@ -27,7 +27,7 @@ repositories {
 }
 
 dependencies {
-     implementation 'com.facebook.react:react-native:+'
+    implementation 'com.facebook.react:react-native:+'
      // From node_modules
      implementation files('libs/alipaySdk-20190611174341.aar')
      implementation files('libs/asiabill-sdk-1.0.jar')
